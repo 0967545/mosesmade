@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all css/contact.css" type="text/css">
+    <title>Fazil- Omar Senior High School</title>
+    <link rel="icon" href="image/background removed copy.png" type="image\x-icon">
+</head>
+<body>
+    <header class="header">
+  <div class="logo">CONTACT FAZIL-OMAR SENIOR HIGH SCHOOL</div>
+  <nav class="nav">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academic.html">Academics</a></li>
+      <li><a href="admission.html">Admissions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+</header>
+
+  <section class="section contact">
+  <h2>Contact Us</h2>
+  <p class="contact-text">
+    Have questions? Send us a message and we will respond within 24–48 hours.
+  </p>
+
+  <form
+    class="contactForm"
+    id="contactForm"
+  action="https://formspree.io/f/"
+  method="POST"
+>
+
+  >
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <!-- Anti-spam honeypot (do not style or remove) -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <!-- Subject -->
+    <input type="hidden" name="_subject" value="New Message from School Website">
+
+    <button type="submit" id="submitBtn">
+      <span class="btn-text">Send Message</span>
+      <span class="loader"></span>
+    </button>
+
+    <!-- Status messages -->
+    <p class="form-status success" id="successMsg">
+      Message sent successfully. We will contact you shortly.
+    </p>
+    <p class="form-status error" id="errorMsg">
+      Something went wrong. Please try again.
+    </p>
+  </form>
+</section>
+
+<p>
+  Email:
+  <a href="omarfazil035@gmail.com">
+    omarfazil035@gmail.com
+  </a>
+</p>
+
+<a href="omarfazil035@gmail.com" class="email-link">
+  📧 Email Us
+</a>
+
+
+<footer class="footer">
+  <p>&copy; 2025 Fazil-Omar  Senior High School. All rights reserved. </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

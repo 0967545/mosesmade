@@ -1,0 +1,204 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: green;
+  color: #fff;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+  background-color: #198754;
+  padding: 3px 8px;
+  border-radius: 6px;
+  color: #ffffff;
+  user-select: none;
+}
+
+/* HERO */
+.hero {
+  background: #f2f6ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.hero p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: none;
+  background: green;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 1s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.hero button:hover{
+  background-color: transparent;
+  border: 1px solid;
+  color: green;
+  transform: rotatex(360deg);
+}
+.hero button:active{
+  opacity: 0.5;
+  background-color: green;
+}
+
+/* SECTION */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: green;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(179, 57, 57, 0.979);
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+.footer {
+  background: green;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: green;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    
+  }
+}
+.section {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.section img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.section h2{
+  position: absolute;
+  top: 40%;
+  left: 19%;
+  color: white;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section p{
+  position: absolute;
+  top: 55%;
+  color: white;
+  align-items: center;
+  justify-content: space-between ;
+  width: 90%;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.address{
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  background-color: rgb(66, 61, 61);
+}
+.address p{
+  margin-top: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: white;
+  margin-bottom: 17px;
+  line-height: 20px;
+}
+.address ul ol{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  text-decoration:#f2f6ff ;
+}
+.address a{
+  text-decoration: none;
+}
+.address ul ol:hover{
+  color: green;
+}
